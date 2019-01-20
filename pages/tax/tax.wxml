@@ -14,6 +14,10 @@
         <view class="section__title">起征点</view>
         <input name="cutoff" placeholder="5000" value="{{cutoff}}"/>
       </view>
+      <view class="section">
+        <view class="section__title">结果</view>
+        <text name="result" value="{{result}}"/>
+      </view>
     
       <view class="btn-area">
         <button form-type="submit">Submit</button>

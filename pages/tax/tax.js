@@ -68,6 +68,9 @@ Page({
    */
   formSubmit(e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    var overcutoff = e.detail.value.income
+    var result = overcutoff
+    console.log(result)
   },
   formReset() {
     console.log('form发生了reset事件')
