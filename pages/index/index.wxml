@@ -10,4 +10,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <view class="btn-area">
+    <navigator url="/pages/tax/tax" hover-class="navigator-hover">下一页</navigator>
+  </view>
 </view>
