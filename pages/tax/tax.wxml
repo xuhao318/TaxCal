@@ -3,8 +3,16 @@
   <text>这是我的test页面哦哦！！！</text>
     <form bindsubmit="formSubmit" bindreset="formReset">
       <view class="section">
-        <view class="section__title">input</view>
-        <input name="input" placeholder="please input here" />
+        <view class="section__title">应收</view>
+        <input name="income" placeholder="" value="{{income}}"/>
+      </view>
+      <view class="section">
+        <view class="section__title">五险一金</view>
+        <input name="insurance" placeholder="" value="{{insurance}}"/>
+      </view>
+      <view class="section">
+        <view class="section__title">起征点</view>
+        <input name="cutoff" placeholder="5000" value="{{cutoff}}"/>
       </view>
     
       <view class="btn-area">
