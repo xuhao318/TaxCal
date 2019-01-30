@@ -1,0 +1,27 @@
+<!--pages/tax/tax.wxml-->
+<view class="container">
+  <text>这是我的test页面哦哦！！！</text>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section">
+        <view class="section__title">应收</view>
+        <input name="income" placeholder="" value="{{income}}"/>
+      </view>
+      <view class="section">
+        <view class="section__title">五险一金</view>
+        <input name="insurance" placeholder="" value="{{insurance}}"/>
+      </view>
+      <view class="section">
+        <view class="section__title">起征点</view>
+        <input name="cutoff" placeholder="5000" value="{{cutoff}}"/>
+      </view>
+      <view class="section">
+        <view class="section__title">结果</view>
+        <text name="result" value="{{result}}"/>
+      </view>
+    
+      <view class="btn-area">
+        <button form-type="submit">Submit</button>
+        <button form-type="reset">Reset</button>
+      </view>
+    </form>
+</view>
