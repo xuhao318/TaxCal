@@ -11,7 +11,7 @@
                 <view class="weui-label">应收</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder=""/>
+                <input class="weui-input" bindblur="incomeinput" placeholder=""/>
             </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -27,7 +27,7 @@
                 <view class="weui-label">个税起征点</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder="5000"/>
+                <input class="weui-input" placeholder="{{cutoff}}"/>
             </view>
         </view>
 
@@ -67,7 +67,7 @@
             </view>
         </view>
         <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" bindtap="calculatetax">计算</button>
+            <button class="weui-btn" type="primary" bindtap='calculatetax'>计算</button>
         </view>
     </view>
 </view>
