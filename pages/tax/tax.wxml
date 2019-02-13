@@ -2,7 +2,6 @@
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__hd">
         <view class="page__title">个税计算器</view>
-        <view class="page__desc">表单输入</view>
     </view>
 
     <view class="weui-cells">
@@ -11,7 +10,7 @@
                 <view class="weui-label">应收</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" bindblur="incomeinput" placeholder=""/>
+                <input class="weui-input" bindchange="income" placeholder=""/>
             </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -19,7 +18,7 @@
                 <view class="weui-label">五险一金</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder=""/>
+                <input class="weui-input" bindoff='insurance' placeholder=""/>
             </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -38,7 +37,7 @@
                 <view class="weui-label">子女教育</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder=""/>
+                <input class="weui-input" bindchange='education' placeholder=""/>
             </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -46,7 +45,7 @@
                 <view class="weui-label">房贷利息</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder=""/>
+                <input class="weui-input" bindchange='mortgageinterest' placeholder=""/>
             </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -54,7 +53,7 @@
                 <view class="weui-label">赡养老人</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder=""/>
+                <input class="weui-input" bindchange='parents' placeholder=""/>
             </view>
         </view>
         <view class="weui-cells__title">其他</view>
@@ -63,7 +62,7 @@
                 <view class="weui-label">年终奖</view>
             </view>
             <view class="weui-cell__bd">
-                <input class="weui-input" placeholder=""/>
+                <input class="weui-input" bindchange='bonus' placeholder=""/>
             </view>
         </view>
         <view class="weui-btn-area">
