@@ -1,9 +1,7 @@
 /* pages/tax/tax.wxss */
-.button-sp-area{
-    margin: 0 auto;
-    padding-top: 15px;
-    width: 60%;
+.page__title{
+  text-align: center;
 }
-.mini-btn{
-    margin-right: 5px;
+.page__desc{
+  text-align: center;
 }
