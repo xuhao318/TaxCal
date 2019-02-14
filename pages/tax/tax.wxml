@@ -6,6 +6,12 @@
 
     <view class="weui-cells">
         <view class="weui-cell weui-cell_input">
+            <view class="weui-label">月份</view>
+            <picker bindchange="monthchange" value="{{monthindex}}" range="{{months}}">
+                <view class="weui-select">{{months[monthindex]}}</view>
+            </picker>
+        </view>
+        <view class="weui-cell weui-cell_input">
             <view class="weui-cell__hd">
                 <view class="weui-label">应收</view>
             </view>
@@ -64,6 +70,9 @@
             <view class="weui-cell__bd">
                 <input class="weui-input" bindchange='bonus' placeholder=""/>
             </view>
+        </view>
+        <view class="btn-area" wx:if="{{showresult}}">
+            <view class="weui-label">result is {{result}}</view>
         </view>
         <view class="weui-btn-area">
             <button class="weui-btn" type="primary" bindtap='calculatetax'>计算</button>
