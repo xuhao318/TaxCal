@@ -1,11 +1,14 @@
 // pages/tax/tax.js
 Page({
   data: {
+    isAnnually: false,
     months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
     monthindex: 0,
     income: 0,
     insurance: 0,
     education: 0,
+    childeducation: 0,
+    continueeducation: 0,
     mortgageinterest: 0,
     parents: 0,
     bonus: 0,
@@ -17,9 +20,7 @@ Page({
   monthchange: function(e){
     this.setData({
       monthindex: e.detail.value
-    }
-
-    )
+    })
   },
 
   income: function (e) {
@@ -40,6 +41,18 @@ Page({
     console.log(e.detail.value)
     this.setData({
       education: e.detail.value
+    })
+  },
+
+  continueeducation: function(e){
+    this.setData({
+      continueeducation: e.detail.value
+    })
+  },
+
+  childeducation: function(e){
+    this.setData({
+      childeducation: e.detail.value
     })
   },
 
@@ -64,9 +77,16 @@ Page({
     })
   },
 
+  savecurrent: function (){
+    console.log("保存")
+  },
+
   calculatetax: function () {
     this.setData({
       showresult: true
     })
+    try {
+      wx.setStorageSync('key', 'value')
+    } catch (e) { }
   }
 });
